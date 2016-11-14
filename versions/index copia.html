@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BiblioTK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form name='form' id="date_time_form" action="consulta.php" method="post">
+      Seleccione la fecha:
+      <input type="date" name="date" id="date_value">
+
+      Selecciona la hora:
+      <select class="hora" name="time" id="time_value">
+        <option value="7">7 hrs</option>
+        <option value="8">8 hrs</option>
+        <option value="9">9 hrs</option>
+        <option value="10">10 hrs</option>
+        <option value="11">11 hrs</option>
+        <option value="12">12 hrs</option>
+        <option value="13">13 hrs</option>
+        <option value="14">14 hrs</option>
+        <option value="15">15 hrs</option>
+        <option value="16">16 hrs</option>
+        <option value="17">17 hrs</option>
+        <option value="18">18 hrs</option>
+        <option value="19">19 hrs</option>
+        <option value="20">20 hrs</option>
+      </select>
+        <input type="submit" name="submit">
+    </form>
+
+    <br><br>
+
+    <div class="cubs" id="blocks">
+      <div id="b1">1</div>
+      <div id="b2">2</div>
+      <div id="b3">3</div>
+      <div id="b4">4</div>
+      <div id="b5">5</div>
+      <div id="b6">6</div>
+      <div id="b7">7</div>
+      <div id="b8">8</div>
+    </div>
+
+  </body>
+</html>

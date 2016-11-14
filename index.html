@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>BiblioTK - Apartado de cubiculos</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div id="encabezado">
+          <img src="assets/logo.png"/>
+      </div>
+      <div id="contenedorPrincipal">
+          <div id="seleccionHorario">
+              <form name='form' id="date_time_form" action="consulta.php" method="post">
+                  <span>Fecha:</span>
+                  <input type="date" name="date" id="date_value" />
+                  <span>Hora:</span>
+                  <select class="hora" name="time" id="time_value">
+                    <option value="7">7 hrs</option>
+                    <option value="8">8 hrs</option>
+                    <option value="9">9 hrs</option>
+                    <option value="10">10 hrs</option>
+                    <option value="11">11 hrs</option>
+                    <option value="12">12 hrs</option>
+                    <option value="13">13 hrs</option>
+                    <option value="14">14 hrs</option>
+                    <option value="15">15 hrs</option>
+                    <option value="16">16 hrs</option>
+                    <option value="17">17 hrs</option>
+                    <option value="18">18 hrs</option>
+                    <option value="19">19 hrs</option>
+                    <option value="20">20 hrs</option>
+                  </select>
+                  <button id="consul">Consultar</button>
+              </form>
+          </div>
+          <div id="cubiculos">
+              <button class="cubiculo" id="b1">1</button>
+              <button class="cubiculo" id="b2">2</button>
+              <button class="cubiculo" id="b3">3</button>
+              <button class="cubiculo" id="b4">4</button>
+              <button class="cubiculo" id="b5">5</button>
+              <button class="cubiculo" id="b6">6</button>
+              <button class="cubiculo" id="b7">7</button>
+              <button class="cubiculo" id="b8">8</button>
+          </div>
+      </div>
+
+      <div id="modalReserva" class="modal">
+
+        <div class="modal-content">
+          <span class="close">x</span>
+          <p>Para apartar el cubículo seleccionado ingrese su matrícula</p>
+          <br>
+          <input type="text" name="matricula" value="" id="inputMatricula">
+          <br><br>
+          <button type="button" name="salir" id="botonCerrar">Cerrar</button>
+          <button type="button" name="apartar" id="botonApartar">Apartar</button>
+        </div>
+
+      </div>
+
+    </body>
+</html>

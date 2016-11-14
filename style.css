@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(http://egade.mx/wps/wcm/connect/18f91a0042242d39b050f10ba338ab3c/mexfe3.jpg?MOD=AJPERES&CACHEID=18f91a0042242d39b050f10ba338ab3c);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+#encabezado {
+    height: 89px;
+    max-width: 377px;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 21px;
+    left: 0;
+}
+#encabezado img {
+    height: 60%;
+    position: absolute;
+    left: 21px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#seleccionHorario {
+    max-width: 987px;
+    width: 90%;
+    height: 89px;
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    top: 144px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#seleccionHorario form {
+    width: 810px;
+    margin: auto;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 32px;
+}
+#seleccionHorario span, #seleccionHorario input, #seleccionHorario button {
+    display: inline-block;
+    height: 55px;
+    margin: 0 10px;
+}
+#seleccionHorario input {
+    background: #fff;
+    border: none;
+}
+#seleccionHorario button {
+    padding:  0 34px;
+    background: #dd6600;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+#cubiculos {
+    max-width: 987px;
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.cubiculo {
+    width: 200px;
+    height: 200px;
+    margin: 21px 21px;
+    /*background: rgba(13, 141, 33, 0.8);*/
+    background: rgba(192, 192, 192, 0.8);
+    line-height: 200px;
+    text-align: center;
+    color: #fff;
+    font-size: 62px;
+    cursor: pointer;
+}
+#cubiculos > .cubiculo {
+    display: inline-block;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

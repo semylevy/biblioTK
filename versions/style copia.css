@@ -1,0 +1,14 @@
+.cubs div {
+    /* these styles will let the divs line up next to each other
+       while accepting dimensions */
+    display: block;
+    float: left;
+
+    width: 20%;
+    height: 200px;
+    background: gray;
+
+    /* a small margin to separate the blocks */
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
