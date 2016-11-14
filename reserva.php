@@ -1,7 +1,7 @@
 <?php
 
   define('__ROOT__', dirname(dirname(__FILE__)));
-  require_once(__ROOT__ . '/biblioTK/config.php');
+  require_once(__ROOT__ . '/legarda/config.php');
 
   $fecha = $_POST['date'];
   $hora = $_POST['time'];
