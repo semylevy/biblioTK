@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
+    outline: none;
 }
 body {
     background-image: url(http://egade.mx/wps/wcm/connect/18f91a0042242d39b050f10ba338ab3c/mexfe3.jpg?MOD=AJPERES&CACHEID=18f91a0042242d39b050f10ba338ab3c);
@@ -50,22 +52,26 @@ body {
     bottom: 0;
     font-size: 32px;
 }
-#seleccionHorario span, #seleccionHorario input, #seleccionHorario button {
+#seleccionHorario span, #seleccionHorario input, #seleccionHorario select, #seleccionHorario button {
     display: inline-block;
     height: 55px;
     margin: 0 10px;
 }
-#seleccionHorario input {
+#seleccionHorario input, #seleccionHorario select {
     background: #fff;
-    border: none;
+    cursor: pointer;
+    padding: 0 21px;
+    font-size: 18px;
 }
 #seleccionHorario button {
     padding:  0 34px;
     background: #dd6600;
     color: #fff;
-    border: none;
     font-size: 22px;
     cursor: pointer;
+}
+#seleccionHorario button:hover {
+  background: #443311;
 }
 #cubiculos {
     max-width: 987px;
@@ -81,13 +87,16 @@ body {
     width: 200px;
     height: 200px;
     margin: 21px 21px;
-    /*background: rgba(13, 141, 33, 0.8);*/
     background: rgba(192, 192, 192, 0.8);
     line-height: 200px;
     text-align: center;
     color: #fff;
     font-size: 62px;
     cursor: pointer;
+    border: none;
+}
+.cubiculo:hover {
+  background: rgba(77, 83, 96,0.9);
 }
 #cubiculos > .cubiculo {
     display: inline-block;
@@ -109,19 +118,32 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+  position: absolute;
+    background-color: #fff;
+    margin: auto;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 377px;
+    height: 233px;
 }
-
 /* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    cursor: pointer;
+    width:27px;
+    height:27px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    line-height: 21px;
+    border-radius:27px;
 }
 
 .close:hover,
@@ -129,4 +151,52 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
+    background: #720000;
+}
+.modal-content p {
+  text-align: center;
+  font-size: 21px;
+  padding: 34px 0 0;
+}
+.modal-content input {
+  background: #e2e2e2;
+  height: 55px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 8px;
+  color: #333;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.botones-modal {
+  position: absolute;
+  bottom: 21px;
+  left:0;
+  right: 0;
+  margin: 0 auto;
+  width: 200px;
+  height: 34px;
+}
+.botones-modal button {
+  height: 34px;
+  width: 89px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+}
+.botones-modal button:nth-child(1) {
+  left: 0;
+  background: red;
+}
+.botones-modal button:nth-child(2) {
+  right: 0;
+  background: green;
+}
+.botones-modal button:hover {
+  background: #333;
 }
